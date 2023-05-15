@@ -1,0 +1,1293 @@
+[
+    {
+        "_id": "645e09509c485cc669cfed9b",
+        "applicationId": "help-me-write",
+        "slug": "home",
+        "Page": {
+            "name": "home",
+            "layouts": [
+                {
+                    "_id": "645e09509c485cc669cfed9f",
+                    "viewMode": false,
+                    "dsl": {
+                        "widgetName": "MainContainer",
+                        "backgroundColor": "none",
+                        "rightColumn": 966,
+                        "snapColumns": 64,
+                        "detachFromLayout": true,
+                        "widgetId": "0",
+                        "topRow": 0,
+                        "bottomRow": 1530,
+                        "containerStyle": "none",
+                        "snapRows": 125,
+                        "parentRowSpace": 1,
+                        "type": "CANVAS_WIDGET",
+                        "canExtend": true,
+                        "version": 57,
+                        "minHeight": 1292,
+                        "parentColumnSpace": 1,
+                        "dynamicBindingPathList": [],
+                        "leftColumn": 0,
+                        "children": [
+                            {
+                                "isVisible": true,
+                                "backgroundColor": "#FFFFFF",
+                                "widgetName": "Container1",
+                                "containerStyle": "card",
+                                "borderColor": "transparent",
+                                "borderWidth": "0",
+                                "borderRadius": "0",
+                                "boxShadow": "NONE",
+                                "animateLoading": true,
+                                "children": [
+                                    {
+                                        "isVisible": true,
+                                        "widgetName": "Canvas1",
+                                        "version": 1,
+                                        "detachFromLayout": true,
+                                        "type": "CANVAS_WIDGET",
+                                        "hideCard": true,
+                                        "displayName": "Canvas",
+                                        "key": "hau0mvu1fo",
+                                        "containerStyle": "none",
+                                        "canExtend": false,
+                                        "children": [
+                                            {
+                                                "isVisible": true,
+                                                "shouldScrollContents": false,
+                                                "widgetName": "Tabs1",
+                                                "animateLoading": true,
+                                                "tabsObj": {
+                                                    "tab1": {
+                                                        "label": "Answer to email",
+                                                        "id": "tab1",
+                                                        "widgetId": "bw66pcb0ju",
+                                                        "isVisible": true,
+                                                        "index": 0
+                                                    },
+                                                    "tab2": {
+                                                        "label": "Create mail",
+                                                        "id": "tab2",
+                                                        "widgetId": "gfvnd526mm",
+                                                        "isVisible": true,
+                                                        "index": 1
+                                                    }
+                                                },
+                                                "shouldShowTabs": true,
+                                                "defaultTab": "Answer to email",
+                                                "version": 3,
+                                                "type": "TABS_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Tabs",
+                                                "key": "51ouqc492s",
+                                                "iconSVG": "/static/media/icon.74a6d653.svg",
+                                                "isCanvas": true,
+                                                "widgetId": "nlvyij3mmu",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 15.71875,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 0,
+                                                "rightColumn": 63,
+                                                "topRow": 22,
+                                                "bottomRow": 148,
+                                                "parentId": "3l6pu7xf6x",
+                                                "children": [
+                                                    {
+                                                        "isVisible": true,
+                                                        "widgetName": "Canvas2",
+                                                        "version": 1,
+                                                        "detachFromLayout": true,
+                                                        "type": "CANVAS_WIDGET",
+                                                        "hideCard": true,
+                                                        "displayName": "Canvas",
+                                                        "key": "p9q0mn5srx",
+                                                        "canExtend": true,
+                                                        "isDisabled": false,
+                                                        "shouldScrollContents": false,
+                                                        "tabId": "tab1",
+                                                        "tabName": "Answer to email",
+                                                        "children": [
+                                                            {
+                                                                "isVisible": "{{changeMail.responseMeta.statusCode === '200'}}",
+                                                                "animateLoading": true,
+                                                                "text": "Perfect! Copy answer",
+                                                                "buttonColor": "#00DFC0",
+                                                                "buttonVariant": "PRIMARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button4Copy1",
+                                                                "isDisabled": false,
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "btn",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "xhjcs8ywyz",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "qqumebx8z0",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 19,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 47,
+                                                                "rightColumn": 64,
+                                                                "topRow": 115,
+                                                                "bottomRow": 120,
+                                                                "parentId": "bw66pcb0ju",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "iconName": "duplicate",
+                                                                "iconAlign": "left",
+                                                                "borderRadius": "ROUNDED",
+                                                                "boxShadow": "VARIANT2",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    },
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "onClick": "{{(copyToClipboard(Text3.text), showAlert('Copied!', 'success') )}}"
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "text": "{{sendMail.data.choices[0].message.content}}",
+                                                                "fontSize": "HEADING3",
+                                                                "fontStyle": "",
+                                                                "textAlign": "LEFT",
+                                                                "textColor": "#231F20",
+                                                                "truncateButtonColor": "#FFC13D",
+                                                                "widgetName": "requestText",
+                                                                "shouldTruncate": false,
+                                                                "overflow": "SCROLL",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "TEXT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Text",
+                                                                "key": "mm2k8m5694",
+                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                "widgetId": "fglmyvnmvk",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 15.40625,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 64,
+                                                                "topRow": 52,
+                                                                "bottomRow": 79,
+                                                                "parentId": "bw66pcb0ju",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "text"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [],
+                                                                "backgroundColor": "#F6F7F850",
+                                                                "borderColor": "#F6F7F8",
+                                                                "borderWidth": "2"
+                                                            },
+                                                            {
+                                                                "isVisible": "{{sendMail.responseMeta.statusCode === '200'}}",
+                                                                "animateLoading": true,
+                                                                "text": "Elaborate",
+                                                                "buttonColor": "#00DFC0",
+                                                                "buttonVariant": "PRIMARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button2",
+                                                                "isDisabled": false,
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "btn",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "xhjcs8ywyz",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "85g5gmg05d",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 19,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 12,
+                                                                "topRow": 80,
+                                                                "bottomRow": 85,
+                                                                "parentId": "bw66pcb0ju",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "iconName": "maximize",
+                                                                "iconAlign": "left",
+                                                                "onClick": "{{(storeValue(\"type\", 'elaborate'),changeMail.run())}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    },
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "borderRadius": "ROUNDED",
+                                                                "boxShadow": "VARIANT2"
+                                                            },
+                                                            {
+                                                                "isVisible": "{{sendMail.responseMeta.statusCode === '200'}}",
+                                                                "animateLoading": true,
+                                                                "text": "Shorten",
+                                                                "buttonColor": "#00DFC0",
+                                                                "buttonVariant": "PRIMARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button3",
+                                                                "isDisabled": false,
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "btn",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "xhjcs8ywyz",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "a2mbv66b1n",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 19,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 13,
+                                                                "rightColumn": 25,
+                                                                "topRow": 80,
+                                                                "bottomRow": 85,
+                                                                "parentId": "bw66pcb0ju",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "iconName": "minimize",
+                                                                "iconAlign": "left",
+                                                                "onClick": "{{(storeValue(\"type\", 'shorter'),changeMail.run())}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    },
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "boxShadow": "VARIANT2",
+                                                                "borderRadius": "ROUNDED"
+                                                            },
+                                                            {
+                                                                "isVisible": "{{sendMail.responseMeta.statusCode === '200'}}",
+                                                                "animateLoading": true,
+                                                                "text": "Formalize",
+                                                                "buttonColor": "#00DFC0",
+                                                                "buttonVariant": "PRIMARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button1",
+                                                                "isDisabled": false,
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "btn",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "xhjcs8ywyz",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "z8p98jhr48",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 19,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 26,
+                                                                "rightColumn": 38,
+                                                                "topRow": 80,
+                                                                "bottomRow": 85,
+                                                                "parentId": "bw66pcb0ju",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "iconName": "briefcase",
+                                                                "iconAlign": "left",
+                                                                "onClick": "{{(storeValue(\"type\", 'formalize'),changeMail.run())}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    },
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "boxShadow": "VARIANT2",
+                                                                "borderRadius": "ROUNDED"
+                                                            },
+                                                            {
+                                                                "isVisible": "{{sendMail.responseMeta.statusCode === '200'}}",
+                                                                "animateLoading": true,
+                                                                "text": "Perfect! Copy answer",
+                                                                "buttonColor": "#00DFC0",
+                                                                "buttonVariant": "PRIMARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button4",
+                                                                "isDisabled": false,
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "btn",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "xhjcs8ywyz",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "58f7ceug8q",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 19,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 47,
+                                                                "rightColumn": 64,
+                                                                "topRow": 80,
+                                                                "bottomRow": 85,
+                                                                "parentId": "bw66pcb0ju",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "iconName": "duplicate",
+                                                                "iconAlign": "left",
+                                                                "borderRadius": "ROUNDED",
+                                                                "boxShadow": "VARIANT2",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    },
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "onClick": "{{(copyToClipboard(requestText.text), showAlert('Copied!', 'success') )}}"
+                                                            },
+                                                            {
+                                                                "isVisible": "{{sendMail.responseMeta.statusCode === '200'}}",
+                                                                "text": "{{changeMail.data.choices[0].message.content}}",
+                                                                "fontSize": "HEADING3",
+                                                                "fontStyle": "",
+                                                                "textAlign": "LEFT",
+                                                                "textColor": "#231F20",
+                                                                "truncateButtonColor": "#FFC13D",
+                                                                "widgetName": "Text3",
+                                                                "shouldTruncate": false,
+                                                                "overflow": "SCROLL",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "TEXT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Text",
+                                                                "key": "mm2k8m5694",
+                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                "widgetId": "uyl5v85e8b",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 15.40625,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 64,
+                                                                "topRow": 86,
+                                                                "bottomRow": 114,
+                                                                "parentId": "bw66pcb0ju",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "text"
+                                                                    },
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [],
+                                                                "borderColor": "#F6F7F8",
+                                                                "borderWidth": "2",
+                                                                "backgroundColor": "#F6F7F850",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "text": "Put your mail there!",
+                                                                "fontSize": "HEADING2",
+                                                                "fontStyle": "",
+                                                                "textAlign": "LEFT",
+                                                                "textColor": "#231F20",
+                                                                "truncateButtonColor": "#FFC13D",
+                                                                "widgetName": "Text1",
+                                                                "shouldTruncate": false,
+                                                                "overflow": "NONE",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "TEXT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Text",
+                                                                "key": "qo1bo9ofoc",
+                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                "widgetId": "7n3feioe1s",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 19,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 64,
+                                                                "topRow": 0,
+                                                                "bottomRow": 6,
+                                                                "parentId": "bw66pcb0ju",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": []
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "label": "",
+                                                                "labelPosition": "Left",
+                                                                "labelAlignment": "left",
+                                                                "labelWidth": 5,
+                                                                "widgetName": "mail",
+                                                                "version": 2,
+                                                                "defaultText": "",
+                                                                "iconAlign": "left",
+                                                                "autoFocus": false,
+                                                                "labelStyle": "",
+                                                                "resetOnSubmit": true,
+                                                                "isRequired": false,
+                                                                "isDisabled": false,
+                                                                "animateLoading": true,
+                                                                "classStyle": "",
+                                                                "inputType": "TEXT",
+                                                                "buttonPosition": "right",
+                                                                "type": "INPUT_WIDGET_V2",
+                                                                "hideCard": false,
+                                                                "displayName": "Input",
+                                                                "key": "41h23f46xo",
+                                                                "iconSVG": "/static/media/icon.9f505595.svg",
+                                                                "widgetId": "uou6gy4g1k",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 15.40625,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 64,
+                                                                "topRow": 6,
+                                                                "bottomRow": 35,
+                                                                "parentId": "bw66pcb0ju",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": [],
+                                                                "isSpellCheck": true,
+                                                                "labelTextSize": "HEADING2"
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "text": "What to do with mail?",
+                                                                "fontSize": "HEADING2",
+                                                                "fontStyle": "",
+                                                                "textAlign": "LEFT",
+                                                                "textColor": "#231F20",
+                                                                "truncateButtonColor": "#FFC13D",
+                                                                "widgetName": "Text2",
+                                                                "shouldTruncate": false,
+                                                                "overflow": "NONE",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "TEXT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Text",
+                                                                "key": "qo1bo9ofoc",
+                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                "widgetId": "4gmebq5fzi",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 19,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 64,
+                                                                "topRow": 35,
+                                                                "bottomRow": 40,
+                                                                "parentId": "bw66pcb0ju",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": []
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "label": "",
+                                                                "labelPosition": "Left",
+                                                                "labelAlignment": "left",
+                                                                "labelWidth": 5,
+                                                                "widgetName": "prompt_input",
+                                                                "version": 2,
+                                                                "defaultText": "",
+                                                                "iconAlign": "left",
+                                                                "autoFocus": false,
+                                                                "labelStyle": "",
+                                                                "resetOnSubmit": true,
+                                                                "isRequired": false,
+                                                                "isDisabled": false,
+                                                                "animateLoading": true,
+                                                                "classStyle": "",
+                                                                "inputType": "TEXT",
+                                                                "buttonPosition": "right",
+                                                                "type": "INPUT_WIDGET_V2",
+                                                                "hideCard": false,
+                                                                "displayName": "Input",
+                                                                "key": "41h23f46xo",
+                                                                "iconSVG": "/static/media/icon.9f505595.svg",
+                                                                "widgetId": "4kf2c5auyo",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 15.40625,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 64,
+                                                                "topRow": 40,
+                                                                "bottomRow": 45,
+                                                                "parentId": "bw66pcb0ju",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": []
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "animateLoading": true,
+                                                                "text": "Send request",
+                                                                "buttonColor": "#00DFC0",
+                                                                "buttonVariant": "PRIMARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button5",
+                                                                "isDisabled": false,
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "btn",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "7dtx82zws0",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "cg3j0vmu27",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 15.40625,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 12,
+                                                                "topRow": 46,
+                                                                "bottomRow": 51,
+                                                                "parentId": "bw66pcb0ju",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "iconName": "airplane",
+                                                                "iconAlign": "left",
+                                                                "onClick": "{{sendMail.run(() => {}, () => showAlert(sendMail.data.error.code,'warning'))}}",
+                                                                "borderRadius": "ROUNDED",
+                                                                "boxShadow": "VARIANT2"
+                                                            }
+                                                        ],
+                                                        "minHeight": 400,
+                                                        "widgetId": "bw66pcb0ju",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 1,
+                                                        "parentRowSpace": 1,
+                                                        "leftColumn": 0,
+                                                        "rightColumn": 377.25,
+                                                        "topRow": 0,
+                                                        "bottomRow": 1220,
+                                                        "parentId": "nlvyij3mmu",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "widgetName": "Canvas3",
+                                                        "version": 1,
+                                                        "detachFromLayout": true,
+                                                        "type": "CANVAS_WIDGET",
+                                                        "hideCard": true,
+                                                        "displayName": "Canvas",
+                                                        "key": "p9q0mn5srx",
+                                                        "canExtend": true,
+                                                        "isDisabled": false,
+                                                        "shouldScrollContents": false,
+                                                        "tabId": "tab2",
+                                                        "tabName": "Create mail",
+                                                        "children": [
+                                                            {
+                                                                "isVisible": "{{changeMail2.responseMeta.statusCode==='200'}}",
+                                                                "animateLoading": true,
+                                                                "text": "Perfect! Copy answer",
+                                                                "buttonColor": "#00DFC0",
+                                                                "buttonVariant": "PRIMARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button4CopyCopy",
+                                                                "isDisabled": false,
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "btn",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "xhjcs8ywyz",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "btlhcdshgn",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 19,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 48,
+                                                                "rightColumn": 64,
+                                                                "topRow": 115,
+                                                                "bottomRow": 120,
+                                                                "parentId": "gfvnd526mm",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "iconName": "duplicate",
+                                                                "iconAlign": "left",
+                                                                "onClick": "{{(copyToClipboard(Text3Copy.text), showAlert('Copied!', 'success') )}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    },
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "boxShadow": "VARIANT2",
+                                                                "borderRadius": "ROUNDED"
+                                                            },
+                                                            {
+                                                                "isVisible": "{{writeMail.responseMeta.statusCode==='200'}}",
+                                                                "animateLoading": true,
+                                                                "text": "Elaborate",
+                                                                "buttonColor": "#00DFC0",
+                                                                "buttonVariant": "PRIMARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button2Copy",
+                                                                "isDisabled": false,
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "btn",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "xhjcs8ywyz",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "03rjwo777c",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 19,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 13,
+                                                                "topRow": 66,
+                                                                "bottomRow": 71,
+                                                                "parentId": "gfvnd526mm",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "iconName": "maximize",
+                                                                "iconAlign": "left",
+                                                                "onClick": "{{(storeValue(\"type\", 'elaborate'),changeMail2.run())}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    },
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "borderRadius": "ROUNDED",
+                                                                "boxShadow": "VARIANT2"
+                                                            },
+                                                            {
+                                                                "isVisible": "{{writeMail.responseMeta.statusCode==='200'}}",
+                                                                "animateLoading": true,
+                                                                "text": "Shorten",
+                                                                "buttonColor": "#00DFC0",
+                                                                "buttonVariant": "PRIMARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button3Copy",
+                                                                "isDisabled": false,
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "btn",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "xhjcs8ywyz",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "c0umbje61u",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 19,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 14,
+                                                                "rightColumn": 27,
+                                                                "topRow": 66,
+                                                                "bottomRow": 71,
+                                                                "parentId": "gfvnd526mm",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "iconName": "minimize",
+                                                                "iconAlign": "left",
+                                                                "onClick": "{{(storeValue(\"type\", 'shorter'),changeMail2.run())}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    },
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "borderRadius": "ROUNDED",
+                                                                "boxShadow": "VARIANT2"
+                                                            },
+                                                            {
+                                                                "isVisible": "{{writeMail.responseMeta.statusCode==='200'}}",
+                                                                "animateLoading": true,
+                                                                "text": "Formalize",
+                                                                "buttonColor": "#00DFC0",
+                                                                "buttonVariant": "PRIMARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button1Copy",
+                                                                "isDisabled": false,
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "btn",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "xhjcs8ywyz",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "xpgorxl1yn",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 19,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 28,
+                                                                "rightColumn": 41,
+                                                                "topRow": 66,
+                                                                "bottomRow": 71,
+                                                                "parentId": "gfvnd526mm",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "iconName": "briefcase",
+                                                                "iconAlign": "left",
+                                                                "onClick": "{{(storeValue(\"type\", 'formalize'),changeMail2.run())}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    },
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "borderRadius": "ROUNDED",
+                                                                "boxShadow": "VARIANT2"
+                                                            },
+                                                            {
+                                                                "isVisible": "{{writeMail.responseMeta.statusCode==='200'}}",
+                                                                "animateLoading": true,
+                                                                "text": "Perfect! Copy answer",
+                                                                "buttonColor": "#00DFC0",
+                                                                "buttonVariant": "PRIMARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button4Copy",
+                                                                "isDisabled": false,
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "btn",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "xhjcs8ywyz",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "kqwkb6jbt5",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 19,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 48,
+                                                                "rightColumn": 64,
+                                                                "topRow": 66,
+                                                                "bottomRow": 71,
+                                                                "parentId": "gfvnd526mm",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "iconName": "duplicate",
+                                                                "iconAlign": "left",
+                                                                "onClick": "{{(copyToClipboard(createdEmail.text), showAlert('Copied!', 'success') )}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    },
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "borderRadius": "ROUNDED",
+                                                                "boxShadow": "VARIANT2"
+                                                            },
+                                                            {
+                                                                "isVisible": "{{writeMail.responseMeta.statusCode==='200'}}",
+                                                                "text": "{{changeMail2.data.choices[0].message.content}}",
+                                                                "fontSize": "HEADING2",
+                                                                "fontStyle": "",
+                                                                "textAlign": "LEFT",
+                                                                "textColor": "#231F20",
+                                                                "truncateButtonColor": "#FFC13D",
+                                                                "widgetName": "Text3Copy",
+                                                                "shouldTruncate": false,
+                                                                "overflow": "SCROLL",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "TEXT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Text",
+                                                                "key": "mm2k8m5694",
+                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                "widgetId": "rbdtyjw4a6",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 15.40625,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 64,
+                                                                "topRow": 72,
+                                                                "bottomRow": 114,
+                                                                "parentId": "gfvnd526mm",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "text"
+                                                                    },
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [],
+                                                                "backgroundColor": "#F6F7F850",
+                                                                "borderColor": "#F6F7F8",
+                                                                "borderWidth": "2",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "text": "Tell me about your email",
+                                                                "fontSize": "HEADING2",
+                                                                "fontStyle": "",
+                                                                "textAlign": "LEFT",
+                                                                "textColor": "#231F20",
+                                                                "truncateButtonColor": "#FFC13D",
+                                                                "widgetName": "Text4",
+                                                                "shouldTruncate": false,
+                                                                "overflow": "NONE",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "TEXT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Text",
+                                                                "key": "mm2k8m5694",
+                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                "widgetId": "kc2ftlv3rq",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 14.85302734375,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 64,
+                                                                "topRow": 0,
+                                                                "bottomRow": 6,
+                                                                "parentId": "gfvnd526mm",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": []
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "label": "",
+                                                                "labelPosition": "Left",
+                                                                "labelAlignment": "left",
+                                                                "labelWidth": 5,
+                                                                "widgetName": "mailCreate",
+                                                                "version": 2,
+                                                                "defaultText": "",
+                                                                "iconAlign": "left",
+                                                                "autoFocus": false,
+                                                                "labelStyle": "",
+                                                                "resetOnSubmit": true,
+                                                                "isRequired": false,
+                                                                "isDisabled": false,
+                                                                "animateLoading": true,
+                                                                "classStyle": "",
+                                                                "inputType": "TEXT",
+                                                                "buttonPosition": "right",
+                                                                "type": "INPUT_WIDGET_V2",
+                                                                "hideCard": false,
+                                                                "displayName": "Input",
+                                                                "key": "0prdurlmib",
+                                                                "iconSVG": "/static/media/icon.9f505595.svg",
+                                                                "widgetId": "h1esnxtkla",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 14.85302734375,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 64,
+                                                                "topRow": 6,
+                                                                "bottomRow": 18,
+                                                                "parentId": "gfvnd526mm",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": []
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "animateLoading": true,
+                                                                "text": "Write mail",
+                                                                "buttonColor": "#00DFC0",
+                                                                "buttonVariant": "PRIMARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button6",
+                                                                "isDisabled": false,
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "btn",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "7dtx82zws0",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "2p2xymqx5s",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 14.85302734375,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 12,
+                                                                "topRow": 19,
+                                                                "bottomRow": 24,
+                                                                "parentId": "gfvnd526mm",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "iconName": "envelope",
+                                                                "iconAlign": "left",
+                                                                "onClick": "{{writeMail.run()}}",
+                                                                "borderRadius": "ROUNDED",
+                                                                "boxShadow": "VARIANT2"
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "text": "{{writeMail.data.choices[0].message.content}}",
+                                                                "fontSize": "HEADING2",
+                                                                "fontStyle": "",
+                                                                "textAlign": "LEFT",
+                                                                "textColor": "#231F20",
+                                                                "truncateButtonColor": "#FFC13D",
+                                                                "widgetName": "createdEmail",
+                                                                "shouldTruncate": false,
+                                                                "overflow": "SCROLL",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "TEXT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Text",
+                                                                "key": "mm2k8m5694",
+                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                "widgetId": "dw6o1qhgoo",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 14.85302734375,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 64,
+                                                                "topRow": 25,
+                                                                "bottomRow": 65,
+                                                                "parentId": "gfvnd526mm",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "text"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [],
+                                                                "backgroundColor": "#F6F7F850",
+                                                                "borderColor": "#F6F7F8",
+                                                                "borderWidth": "2"
+                                                            }
+                                                        ],
+                                                        "minHeight": 400,
+                                                        "widgetId": "gfvnd526mm",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 1,
+                                                        "parentRowSpace": 1,
+                                                        "leftColumn": 0,
+                                                        "rightColumn": 377.25,
+                                                        "topRow": 0,
+                                                        "bottomRow": 1220,
+                                                        "parentId": "nlvyij3mmu",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": []
+                                                    }
+                                                ],
+                                                "dynamicBindingPathList": [],
+                                                "dynamicTriggerPathList": []
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+                                                "imageShape": "RECTANGLE",
+                                                "maxZoomLevel": 1,
+                                                "enableRotation": false,
+                                                "enableDownload": false,
+                                                "objectFit": "contain",
+                                                "image": "https://dailybayonet.com/wp-content/uploads/2022/02/essay-writing-help.jpg",
+                                                "widgetName": "Image1",
+                                                "version": 1,
+                                                "animateLoading": true,
+                                                "type": "IMAGE_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Image",
+                                                "key": "e2x50j1olz",
+                                                "iconSVG": "/static/media/icon.52d8fb96.svg",
+                                                "widgetId": "kduqfdfkaq",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 15.40625,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 34,
+                                                "rightColumn": 64,
+                                                "topRow": 0,
+                                                "bottomRow": 22,
+                                                "parentId": "3l6pu7xf6x",
+                                                "dynamicBindingPathList": [],
+                                                "dynamicTriggerPathList": []
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "text": "<span style=\"font-size: 39px;color:#00DFC0\">HELP</span> </br> <span style=\"font-size: 39px;color:#FF6B6B\"> ME</span> </br><span style=\"font-size: 39px;color:#8DC26F\">   WRITE</span>",
+                                                "fontSize": "HEADING1",
+                                                "fontStyle": "BOLD",
+                                                "textAlign": "LEFT",
+                                                "textColor": "#231F20",
+                                                "truncateButtonColor": "#FFC13D",
+                                                "widgetName": "Text5",
+                                                "shouldTruncate": false,
+                                                "overflow": "NONE",
+                                                "version": 1,
+                                                "animateLoading": true,
+                                                "type": "TEXT_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Text",
+                                                "key": "rjn52nlzi0",
+                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                "widgetId": "z2ymkalv7p",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 15.40625,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 1,
+                                                "rightColumn": 33,
+                                                "topRow": 2,
+                                                "bottomRow": 19,
+                                                "parentId": "3l6pu7xf6x",
+                                                "dynamicBindingPathList": [],
+                                                "dynamicTriggerPathList": []
+                                            }
+                                        ],
+                                        "minHeight": 400,
+                                        "widgetId": "3l6pu7xf6x",
+                                        "renderMode": "CANVAS",
+                                        "isLoading": false,
+                                        "parentColumnSpace": 1,
+                                        "parentRowSpace": 1,
+                                        "leftColumn": 0,
+                                        "rightColumn": 377.25,
+                                        "topRow": 0,
+                                        "bottomRow": 1500,
+                                        "parentId": "5ta5g130r6"
+                                    }
+                                ],
+                                "version": 1,
+                                "classStyle": "gridWrap",
+                                "type": "CONTAINER_WIDGET",
+                                "hideCard": false,
+                                "displayName": "Container",
+                                "key": "t8zq7ar1us",
+                                "iconSVG": "/static/media/icon.1977dca3.svg",
+                                "isCanvas": true,
+                                "widgetId": "5ta5g130r6",
+                                "renderMode": "CANVAS",
+                                "isLoading": false,
+                                "parentColumnSpace": 15.71875,
+                                "parentRowSpace": 10,
+                                "leftColumn": 0,
+                                "rightColumn": 64,
+                                "topRow": 0,
+                                "bottomRow": 151,
+                                "parentId": "0",
+                                "dynamicBindingPathList": [],
+                                "dynamicTriggerPathList": [],
+                                "shouldScrollContents": true
+                            }
+                        ],
+                        "dynamicTriggerPathList": []
+                    },
+                    "widgetNames": [
+                        "MainContainer",
+                        "Container1",
+                        "Canvas1",
+                        "Tabs1",
+                        "Canvas2",
+                        "Button4Copy1",
+                        "requestText",
+                        "Button2",
+                        "Button3",
+                        "Button1",
+                        "Button4",
+                        "Text3",
+                        "Text1",
+                        "mail",
+                        "Text2",
+                        "prompt_input",
+                        "Button5",
+                        "Canvas3",
+                        "Button4CopyCopy",
+                        "Button2Copy",
+                        "Button3Copy",
+                        "Button1Copy",
+                        "Button4Copy",
+                        "Text3Copy",
+                        "Text4",
+                        "mailCreate",
+                        "Button6",
+                        "createdEmail",
+                        "Image1",
+                        "Text5"
+                    ],
+                    "deleted": false,
+                    "layoutOnLoadActions": [
+                        []
+                    ],
+                    "layoutOnCloseActions": [
+                        []
+                    ],
+                    "policies": []
+                }
+            ]
+        },
+        "createdAt": "2023-05-12T09:39:28.484Z",
+        "updatedAt": "2023-05-12T09:39:28.484Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:pages",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:pages",
+                "groups": [],
+                "users": []
+            }
+        ]
+    }
+]

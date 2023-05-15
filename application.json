@@ -1,0 +1,50 @@
+{
+    "_id": "645e09509c485cc669cfed9a",
+    "name": "help-me-write",
+    "slug": "help-me-write",
+    "organizationId": "Org",
+    "isPublic": true,
+    "isMenu": false,
+    "createdAt": "2023-05-12T09:39:28.484Z",
+    "updatedAt": "2023-05-12T09:39:28.484Z",
+    "deleted": false,
+    "pages": [
+        {
+            "_id": "home",
+            "isDefault": true
+        }
+    ],
+    "policies": [
+        {
+            "permission": "makePublic:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "read:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "publish:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "manage:applications",
+            "groups": [],
+            "users": []
+        }
+    ],
+    "global_setting": {
+        "css": "https://helpmewritenr-645e5cf4a7799511000000c0.ubos.tech/css"
+    },
+    "gitApplicationMetadata": {
+        "browserSupportedRemoteUrl": "https://github.com/UBOS-tech/ubos-template-AI-help-me-write-UI",
+        "defaultApplicationId": "help-me-write",
+        "defaultBranchName": "main",
+        "isRepoPrivate": true,
+        "remoteUrl": "git@github.com:UBOS-tech/ubos-template-AI-help-me-write-UI.git",
+        "repoName": "ubos-template-AI-help-me-write-UI"
+    }
+}
