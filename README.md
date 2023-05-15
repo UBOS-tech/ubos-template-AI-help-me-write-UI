@@ -37,3 +37,12 @@ Our tool features a clean and intuitive interface, making it easy for you to nav
 With our Email Assistance Tool, you can save time, improve your communication skills, and increase your productivity. Let our AI-powered assistant take the guesswork out of crafting effective email responses and letters.
 
 Experience the convenience and efficiency of our Help Me Write today. Try it now!
+
+## Demo
+![Demo - 1](https://github.com/UBOS-tech/ubos-template-AI-help-me-write-UI/assets/41735477/daf7b2a3-0cdb-41b5-a358-9ff1362f643f)
+![Demo - 2](https://github.com/UBOS-tech/ubos-template-AI-help-me-write-UI/assets/41735477/3927e5cd-14e7-4ac0-8a51-b846ee11a8ec)
+![Demo - 3](https://github.com/UBOS-tech/ubos-template-AI-help-me-write-UI/assets/41735477/d581887b-effb-4d15-8917-90851b999735)
+
+
+
+
