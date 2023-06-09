@@ -12,6 +12,13 @@ Help me write
   •
   <a href="https://github.com/UBOS-tech">GitHub</a>
   </h3>
+
+<div align="center">
+  
+  [![Use template](https://ubos.tech/wp-content/uploads/2023/06/download-logo.png)](https://platform.ubos.tech/?templateId=64631d733023c6001004f3da)
+  [![Use template](https://ubos.tech/wp-content/uploads/2023/06/Group-19.png)](https://youtu.be/p5iYMMWkZyo)
+  
+</div>
   
 Welcome to Help Me Write!
 
