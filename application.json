@@ -37,7 +37,7 @@
         }
     ],
     "global_setting": {
-        "css": "https://helpmewritenr-645e5cf4a7799511000000c0.ubos.tech/css"
+        "css": "${env.get(\"nodeUrl\")}/css"
     },
     "gitApplicationMetadata": {
         "browserSupportedRemoteUrl": "https://github.com/UBOS-tech/ubos-template-AI-help-me-write-UI",
